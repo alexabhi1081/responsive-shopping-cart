@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 10px;
+}
+.products, .cart {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.product, .cart-item {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  width: calc(33.33% - 20px);
+}
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .product, .cart-item {
+    width: 100%;
+  }
+}
